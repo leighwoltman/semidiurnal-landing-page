@@ -2,10 +2,8 @@ const sh = require('shelljs');
 const upath = require('upath');
 
 const destPath = upath.resolve(upath.dirname(__filename), '../dist');
-
-sh.rm('-rf', `${destPath}/*`)
-
 const docsPath = upath.resolve(upath.dirname(__filename), '../docs');
 
-sh.rm('-rf', `${docsPath}/*`)
+// Copy contents of destPath to docsPath using shelljs
+sh.cp('-R', upath.join(destPath, '*'), docsPath);
 

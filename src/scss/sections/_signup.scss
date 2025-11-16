@@ -5,10 +5,10 @@
 .signup-section {
     padding: 10rem 0;
     background: linear-gradient(to bottom,
-        #{fade-out($black, 0.9)} 0%,
-        #{fade-out($black, 0.5)} 75%,
-        $black 100%),
-    url("../assets/img/bg-signup.jpg");
+        #{fade-out($deep, 0.0)} 0%,
+        #{fade-out($deep, 0.1)} 75%,
+        $deep 100%);
+    margin-bottom: -1px; // needed because at some sizes the gradient ends with a faint line
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -24,6 +24,7 @@
             text-transform: uppercase;
             letter-spacing: 0.15rem;
             border: 0;
+            margin-bottom: 20px;
         }
     }
 }

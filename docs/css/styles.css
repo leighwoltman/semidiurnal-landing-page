@@ -10981,7 +10981,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  background-color: #010c1a;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11032,8 +11032,14 @@ body {
   #mainNav .nav-link:active {
     color: #fff;
   }
+  #mainNav img {
+    visibility: hidden;
+  }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: #010c1a;
+  }
+  #mainNav.navbar-shrink img {
+    visibility: visible;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #000;
@@ -11072,8 +11078,8 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%, #000 100%), url("../assets/img/background01.png");
-  background-position: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%, #010c1a 100%), url("../assets/img/background01.png");
+  background-position: right;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -11087,6 +11093,11 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
+}
+@media (min-width: 992px) {
+  .masthead img {
+    max-width: 70%;
+  }
 }
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
@@ -11146,7 +11157,8 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to bottom, #010c1a 0%, rgba(1, 12, 26, 0.9) 75%, #010c1a 100%);
+  margin-bottom: -1px;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11161,6 +11173,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
+  margin-bottom: 20px;
 }
 
 .contact-section {
@@ -11202,5 +11215,6 @@ body {
 }
 
 .footer {
+  background-color: #010c1a;
   padding: 5rem 0;
 }

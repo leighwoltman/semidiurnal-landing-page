@@ -4,7 +4,7 @@
 
 #mainNav {
     min-height: 3.5rem;
-    background-color: $white;
+    background-color: $deep;
 
     .navbar-toggler {
         font-size: 80%;
@@ -69,8 +69,16 @@
             }
         }
 
+        img {
+            visibility: hidden;
+        }
+
         &.navbar-shrink {
-            background-color: $white;
+            background-color: $deep;
+
+            img {
+                visibility: visible;
+            }
 
             .navbar-brand {
                 color: $black;
