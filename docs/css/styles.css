@@ -10973,6 +10973,7 @@ textarea.form-control-lg {
 }
 html {
   scroll-padding-top: calc(4.5rem - 1px);
+  background-color: #010c1a;
 }
 
 body {
